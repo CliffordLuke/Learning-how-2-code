@@ -1,3 +1,18 @@
+<h1>
+  Button Stuff
+</h1>
+
+<h3>
+  Testing #1
+</h3>
+
+<p>
+  Learned about how to change the background color, border, text color, size, font, and more of buttons.
+  Also learned how to make them change when hovered over or clicked on.
+  Plus also learned how to make them link to other pages when clicked on.
+  Pretty cool!
+</p>
+
 <style>
   .green-button {
     background-color: #009900;
@@ -8,7 +23,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: large;
-    margin-right: 10px;
+    margin-right: 50px;
     transition: box-shadow 0.1s;
   }
 
@@ -32,12 +47,11 @@
     background-color: #e6b208;
     border: 2px solid #db7516;
     color: #000000;
-    height: 50px;
-    width: 200px;
+    padding: 12px 20px;
     cursor: pointer;
     font-size: large;
     font-style: italic; 
-    margin-right: 10px;
+    margin-right: 50px;
     transition: background-color 0.5s, color 0.5s;
   }
 
@@ -54,18 +68,19 @@
 
 
 
+
+
   .blue-button {
     background-color: #0099cc;
     border: 5px solid #006699;
     color: #003955;
-    height: 50px;
-    width: 150px;
+    padding: 15px 30px;
     border-radius: 25px;
     cursor: pointer;
     font-size: 25px;
     font-weight: bold;
     transition: opacity 0.3s;
-    margin-right: 10px;
+    margin-right: 50px;
   }
 
   .blue-button:hover {
@@ -79,6 +94,7 @@
     transition: opacity 0.3s;
     opacity: 1;
   }
+
 
 
 
@@ -111,30 +127,191 @@
   }
 </style>
 
-<h1>
-  Button Stuff
-</h1>
-
-<a href="https://www.realsimple.com/thmb/I5FtDrpP2kw3q7f0BsjfWQvSMzI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1407861824-ee2a308b7f134e509f4d3463653d6cfe.jpg" target="_blank">
+<a href="https://www.realsimple.com/thmb/I5FtDrpP2kw3q7f0BsjfWQvSMzI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1407861824-ee2a308b7f134e509f4d3463653d6cfe.jpg"
+target="_blank">
   <button class="green-button">
     GREEN
   </button>
 </a>
 
-<a href="https://cisp.cachefly.net/assets/articles/images/resized/0001150807_resized_goldbars10223.jpg" target="_blank">
+<a href="https://cisp.cachefly.net/assets/articles/images/resized/0001150807_resized_goldbars10223.jpg"
+target="_blank">
   <button class="gold-button">
     Gold~
   </button>
 </a>
 
-<a href="https://www.azolifesciences.com/images/Article_Images/ImageForArticle_879_16565087352229196.jpg" target="_blank">
+<a href="https://www.azolifesciences.com/images/Article_Images/ImageForArticle_879_16565087352229196.jpg"
+target="_blank">
   <button class="blue-button">
     Blue
   </button>
 </a>
 
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+target="_blank">
   <button class="invis-button">
     Invisible
   </button>
 </a>
+
+<p
+style="opacity: 0.5;
+font-size: small;">
+  PS. I dont know how to get rid of those lines beside the buttons,
+  I know its because of the link,
+  but I dont know how to fix it.
+</p>
+
+<p
+style="opacity: 0.5;
+font-size: small;">
+  PPS. I also dont know why the link can be opened outside of the button.
+  I think its because of the margins but idk how to fix that yet.
+</p>
+
+
+
+
+<h3>
+  Testing #2
+</h3>
+
+<p>
+  The same thing above, but without links.
+  Here I played around with more of the stuff like size, position, and rotation.
+</p>
+
+<style>
+  .expand-button {
+    background-color: #ff6600;
+    border: none;
+    color: #000000;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    transition: width 0.5s, height 0.5s;
+    margin-right: 50px;
+  }
+
+  .expand-button:hover {
+    width: 150px;
+    height: 75px;
+    transition: width 0.5s, height 0.5s;
+  }
+
+  .expand-button:active {
+    background-color: #ff3300;
+    color: #ffffff;
+    width: 200px;
+    height: 100px;
+    transition: width 0.5s, height 0.5s;
+  }
+
+
+
+
+  .lift-button {
+    background-color: #ff6600;
+    border: none;
+    color: #000000;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-right: 50px;
+  }
+
+  .lift-button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .lift-button:active {
+    background-color: #ff3300;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+
+
+
+
+
+  .rotate-button {
+    background-color: #ff6600;
+    border: none;
+    color: #000000;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    transition: transform 0.5s;
+  }
+
+  .rotate-button:hover {
+    transform: rotate(15deg);
+    transition: transform 1.5s;
+  }
+
+  .rotate-button:active {
+    background-color: #ff3300;
+    color: #ffffff;
+    transform: rotate(360deg);
+    transition: transform 2s;
+  }
+
+
+
+
+
+  .margin-pad-button {
+    background-color: #ff6600;
+    border: none;
+    color: #000000;
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    transition: margin 0.5s, padding 0.5s;
+    margin-left: 50px;
+  }
+
+  .margin-pad-button:hover {
+    padding: 0px 30px;
+    transition: margin 0.5s, padding 0.5s;
+    margin-left: 40px;
+  }
+
+  .margin-pad-button:active {
+    background-color: #ff3300;
+    color: #ffffff;
+    padding: 0px 40px;
+    transition: margin 0.5s, padding 0.5s;
+    margin-left: 30px;
+  }
+</style>
+
+<button class="expand-button">
+  Expand
+</button>
+
+<button class="lift-button">
+  Lift n' drop
+</button>
+
+<button class="rotate-button">
+  Rotate
+</button>
+
+<button class="margin-pad-button">
+  mar-pad 
+</button>
