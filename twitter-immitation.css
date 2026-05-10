@@ -13,154 +13,293 @@
   object-position: center;
 }
 
-
-
-
-
-.twitter-add-post-part {
-  background-color: #000000;
-  padding: 10px;
-}
-
-
-
-
-
-.twitter-posts {
-  background-color: #000000;
+.twitter-div-pfp {
   display: flex;
-  flex-direction: row;
+  width: 40px;
+  height: 40px;
 }
 
-  .twitter-posts-left {
-    display: flex;
-    width: 40px;
-    margin: 0px 10px;
 
+
+
+
+.twitter-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #000000;
+  width: 590px;
+}
+
+  .twitter-add-post {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border: #616161 solid 1px;
+    width: 550px;
   }
 
-  .twitter-posts-top {
-    display: flex;
-    margin: 0px;
-    flex-direction: column;
-  }
-
-    .twitter-posts-top-line1 {
+    .twitter-add-post-left {
       display: flex;
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    .twitter-add-post-right {
+      display: flex;
+      width: 500px;
       flex-direction: column;
     }
 
-      .twitter-username {
-        font-weight: bold;
-        color: #ffffff;
-        margin-top: 5px;
-        margin-right: 2px;
+      .twitter-add-post-right-top {
+        display: flex;
+        margin: 0px;
+        height: 40px;
       }
 
-      .twitter-handle {
-        color: #616161;
-        margin-top: 5px;
+        .searchbar {
+          display: flex;;
+        }
+
+          .searchbar-input {
+            display: flex;
+            background-color: transparent;
+            border-width: 0px;
+            color: #ffffff;
+            font-size: 20px;
+          }
+      
+      .twitter-add-post-right-bottom {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: row;
       }
-
-      .twitter-timestamp {
-        color: #616161;
-        margin-top: 5px;
-      }
-
-    .twitter-posts-top-line2 {
-      display: flex;
-      margin-top: 5px;
-    }
-
-      .twitter-content {
-        color: #ffffff;
-      }
-
-    .twitter-posts-top-line3 {
-      display: flex;
-      margin-top: 10px;
-    }
-
-      .twitter-post-image {
-        width: 500px;
-        object-fit: contain;
-        object-position: left;
-        border-radius: 10px;
-        border-width: 1px;
-        border-color: #616161;
-        border-style: solid;
-      }
-
-  .twitter-posts-bottom {
-    display: flex;
-    margin: 15px 0px;
-  }
-
-    .twitter-posts-bottom-line {
-      display: flex;
-    }
-
-      .twitter-posts-bottom-line-part1 {
+      
+        .twitter-add-post-right-bottom-part1 {
           display: flex;
           width: 400px;
         }
 
-        .twitter-posts-bottom-line-comments {
-          display: flex;
-          width: 100px;
-        }
-
-        .twitter-posts-bottom-line-repost {
-          display: flex;
-          width: 100px;
-        }
-
-        .twitter-posts-bottom-line-likes {
-          display: flex;
-          width: 100px;
-        }
-
-        .twitter-posts-bottom-line-views {
-          display: flex;
-          width: 100px;
-        }
-
-          .twitter-posts-bottom-line-icon {
+          .twitter-add-post-right-bottom-icon {
             display: flex;
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
           }
 
-            .twitter-posts-bottom-line-icon-image {
+            .twitter-add-post-right-bottom-icon-image {
               display: flex;
-              width: 20px;
-              height: 20px;
+              width: 30px;
+              height: 30px;
               object-fit: contain;
               object-position: center;
               padding: 0px;
             }
 
-          .twitter-posts-bottom-line-number {
+        .twitter-add-post-right-bottom-part2 {
+          display: flex;
+          width: 80px;
+          margin-left: 20px;
+        }
+
+          .twitter-post-button {
             display: flex;
+            background-color: #414141;
+            color: #000000;
+            border-width: 0px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            height: 30px;
+            width: 80px;
+            justify-content: center;
+            align-items: center;
           }
 
-            .twitter-icon-number {
-              color: #616161;
-              margin-left: 5px;
-            }
 
-      .twitter-posts-bottom-line-part2 {
+
+
+  .twitter-posts {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border: #616161 solid 1px;
+    width: 550px;
+  }
+
+    .twitter-posts-left {
+      display: flex;
+      width: 40px;
+      margin-right: 10px;
+
+    }
+
+    .twitter-posts-right {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+    }
+
+      .twitter-posts-right-top {
         display: flex;
-        width: 60px;
-        margin-left: 40px;
+        margin: 0px;
+        flex-direction: column;
       }
 
-        .twitter-posts-bottom-line-bookmark {
+        .twitter-posts-right-top-line1 {
           display: flex;
-          width: 20px;
-          margin-left: 10px;
+          flex-direction: row;
+          width: 500px;
         }
 
-        .twitter-posts-bottom-line-share {
+          .twitter-posts-right-top-line1-part1 {
+            display: flex;
+            flex-direction: column;
+            width: 440px;
+          }
+
+            .twitter-username {
+              font-weight: bold;
+              color: #ffffff;
+              margin-top: 5px;
+              margin-right: 2px;
+            }
+
+            .twitter-handle {
+              color: #616161;
+              margin-top: 5px;
+            }
+
+            .twitter-timestamp {
+              color: #616161;
+              margin-top: 5px;
+            }
+
+          .twitter-posts-right-top-line1-part2 {
+            display: flex;
+            flex-direction: row;
+            width: 60px;
+          }
+
+            .twitter-posts-right-top-line1-grok {
+              display: flex;
+              width: 20px;
+              margin-left: 10px;
+            }
+
+            .twitter-posts-right-top-line1-more {
+              display: flex;
+              width: 20px;
+              margin-left: 10px;
+            }
+
+              .twitter-posts-right-top-line1-icon {
+                display: flex;
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+                object-position: center;
+                padding: 0px;
+              }
+
+        .twitter-posts-right-top-line2 {
           display: flex;
-          width: 20px;
-          margin-left: 10px;
+          margin-top: 5px;
+          width: 500px;
         }
+
+          .twitter-content {
+            color: #ffffff;
+          }
+
+        .twitter-posts-right-top-line3 {
+          display: flex;
+          margin-top: 10px;
+          width: 500px;
+        }
+
+          .twitter-post-image {
+            width: 500px;
+            object-fit: contain;
+            object-position: left;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: #616161;
+            border-style: solid;
+          }
+
+      .twitter-posts-right-bottom {
+        display: flex;
+        margin-top: 15px;
+      }
+
+        .twitter-posts-right-bottom-line {
+          display: flex;
+        }
+
+          .twitter-posts-right-bottom-line-part1 {
+              display: flex;
+              width: 400px;
+            }
+
+            .twitter-posts-right-bottom-line-comments {
+              display: flex;
+              width: 100px;
+            }
+
+            .twitter-posts-right-bottom-line-repost {
+              display: flex;
+              width: 100px;
+            }
+
+            .twitter-posts-right-bottom-line-likes {
+              display: flex;
+              width: 100px;
+            }
+
+            .twitter-posts-right-bottom-line-views {
+              display: flex;
+              width: 100px;
+            }
+
+              .twitter-posts-right-bottom-line-icon {
+                display: flex;
+              }
+
+                .twitter-posts-right-bottom-line-icon-image {
+                  display: flex;
+                  width: 20px;
+                  height: 20px;
+                  object-fit: contain;
+                  object-position: center;
+                  padding: 0px;
+                }
+
+              .twitter-posts-right-bottom-line-number {
+                display: flex;
+              }
+
+                .twitter-icon-number {
+                  color: #616161;
+                  margin-left: 5px;
+                }
+
+          .twitter-posts-right-bottom-line-part2 {
+            display: flex;
+            width: 60px;
+            margin-left: 40px;
+          }
+
+            .twitter-posts-right-bottom-line-bookmark {
+              display: flex;
+              width: 20px;
+              margin-left: 10px;
+            }
+
+            .twitter-posts-right-bottom-line-share {
+              display: flex;
+              width: 20px;
+              margin-left: 10px;
+            }
