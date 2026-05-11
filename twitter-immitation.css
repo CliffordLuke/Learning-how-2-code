@@ -31,7 +31,8 @@
   width: 590px;
 }
 
-  .twitter-add-post {
+  .twitter-add-post,
+  .twitter-posts {
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -39,6 +40,8 @@
     border: #616161 solid 1px;
     width: 550px;
   }
+
+  /*Twitter Add Post*/
 
     .twitter-add-post-left {
       display: flex;
@@ -59,7 +62,7 @@
       }
 
         .searchbar {
-          display: flex;;
+          display: flex;
         }
 
           .searchbar-input {
@@ -117,17 +120,7 @@
             align-items: center;
           }
 
-
-
-
-  .twitter-posts {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    border: #616161 solid 1px;
-    width: 550px;
-  }
+  /*Twitter Posts*/
 
     .twitter-posts-left {
       display: flex;
@@ -167,11 +160,7 @@
               margin-right: 2px;
             }
 
-            .twitter-handle {
-              color: #616161;
-              margin-top: 5px;
-            }
-
+            .twitter-handle,
             .twitter-timestamp {
               color: #616161;
               margin-top: 5px;
@@ -183,12 +172,7 @@
             width: 60px;
           }
 
-            .twitter-posts-right-top-line1-grok {
-              display: flex;
-              width: 20px;
-              margin-left: 10px;
-            }
-
+            .twitter-posts-right-top-line1-grok,
             .twitter-posts-right-top-line1-more {
               display: flex;
               width: 20px;
@@ -244,21 +228,9 @@
               width: 400px;
             }
 
-            .twitter-posts-right-bottom-line-comments {
-              display: flex;
-              width: 100px;
-            }
-
-            .twitter-posts-right-bottom-line-repost {
-              display: flex;
-              width: 100px;
-            }
-
-            .twitter-posts-right-bottom-line-likes {
-              display: flex;
-              width: 100px;
-            }
-
+            .twitter-posts-right-bottom-line-comments,
+            .twitter-posts-right-bottom-line-repost,
+            .twitter-posts-right-bottom-line-likes,
             .twitter-posts-right-bottom-line-views {
               display: flex;
               width: 100px;
@@ -292,12 +264,7 @@
             margin-left: 40px;
           }
 
-            .twitter-posts-right-bottom-line-bookmark {
-              display: flex;
-              width: 20px;
-              margin-left: 10px;
-            }
-
+            .twitter-posts-right-bottom-line-bookmark,
             .twitter-posts-right-bottom-line-share {
               display: flex;
               width: 20px;
