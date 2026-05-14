@@ -23,7 +23,7 @@
 
 
 
-.twitter-container {
+.twitter-main-section {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -31,15 +31,29 @@
   width: 590px;
 }
 
-  .twitter-add-post,
-  .twitter-posts {
+  .twitter-add-post {
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    padding: 20px;
     border: #616161 solid 1px;
     width: 550px;
+    padding: 20px;
   }
+
+  .twitter-posts-section {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border: #616161 solid 0px;
+  }
+
+    .post {
+      display: flex;
+      flex-direction: row;
+      border: #616161 solid 1px;
+      width: 550px;
+      padding: 20px;
+    }
 
   /*Twitter Add Post*/
 
@@ -68,9 +82,12 @@
           .searchbar-input {
             display: flex;
             background-color: transparent;
-            border-width: 0px;
+            border: none;
             color: #ffffff;
             font-size: 20px;
+            outline: none;
+            padding: 0px;
+            width: 500px;
           }
       
       .twitter-add-post-right-bottom {
