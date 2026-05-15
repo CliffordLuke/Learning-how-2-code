@@ -19,6 +19,12 @@
   height: 40px;
 }
 
+.right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 
 
@@ -38,6 +44,7 @@
     border: #616161 solid 1px;
     width: 550px;
     padding: 20px;
+    margin-top: 40px;
   }
 
   .twitter-posts-section {
@@ -287,3 +294,39 @@
               width: 20px;
               margin-left: 10px;
             }
+
+
+.twitter-top-selection {
+  display: flex;
+  flex-direction: row;
+  border: #616161 solid 1px;
+  height: 50px;
+  width: 590px;
+  position: fixed;
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+  .For-you, 
+  .Following {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .For-you :hover, 
+  .Following :hover {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+  }
+
+  .For-you-text,
+  .Following-text {
+    color: #ffffff;
+    flex: 1;
+    height: 50px;
+  }
