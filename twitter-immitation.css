@@ -20,12 +20,17 @@
 }
 
 .icon {
-  filter: drop-shadow(0px 100000px 0 #3e4144);
+  filter: drop-shadow(0px 100000px 0 #686a6e);
   transform: translateY(-100000px);
 }
 
 .icon-left {
   filter: drop-shadow(0px 100000px 0 #ffffff);
+  transform: translateY(-100000px);
+}
+
+.icon-left-special {
+  filter: drop-shadow(0px 100000px 0 #000000);
   transform: translateY(-100000px);
 }
 
@@ -39,6 +44,7 @@ body {
   flex-direction: row;
   background-color: #000000;
   margin: 0px;
+  justify-content: center;
 }
 
 
@@ -48,6 +54,8 @@ body {
 .left-section-blank {
   display: flex;
   min-width: 50px;
+  max-width: 200px;
+  justify-content: right;
 }
 
 .left-section {
@@ -55,34 +63,52 @@ body {
   width: 50px;
   flex-direction: column;
   position: fixed;
+  margin-right: 20px;
+  align-items: center;
 }
 
 .left-main {
   display: flex;
   flex-direction: column;
   margin: 0;
+  align-items: center;
 }
 
-  .left-icons {
+  .left-icon-container {
     display: flex;
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
-    object-position: center;
-    padding: 5px;
     margin-bottom: 10px;
   }
+
+  .left-icon-special {
+    display: flex;
+    margin-top: 10px;
+  }
+
+    .left-icons {
+      display: flex;
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+      object-position: center;
+      padding: 5px;
+    }
+
+    .main-icon {
+      width: 30px;
+      height: 30px;
+    }
 
 .left-accounts {
   display: flex;
 }
 
   .twitter-pfp-left {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+    padding: 5px;
   }
 
 
@@ -93,6 +119,7 @@ body {
 .right-section {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
 }
 
 .twitter-main-section {
@@ -125,6 +152,12 @@ body {
       width: 550px;
       padding: 20px;
     }
+
+
+
+
+
+
 
   /*Twitter Add Post*/
 
@@ -208,6 +241,15 @@ body {
             align-items: center;
           }
 
+
+
+
+
+
+
+
+
+
   /*Twitter Posts*/
 
     .twitter-posts-left {
@@ -250,7 +292,7 @@ body {
 
             .twitter-handle,
             .twitter-timestamp {
-              color: #3e4144;
+              color: #686a6e;
               margin-top: 5px;
             }
 
@@ -342,7 +384,7 @@ body {
               }
 
                 .twitter-icon-number {
-                  color: #3e4144;
+                  color: #686a6e;
                   margin-left: 5px;
                 }
 
@@ -391,13 +433,20 @@ body {
 
   .For-you:hover, 
   .Following:hover {
-    background-color: #3e4144;
-    opacity: 0.4;
+    background-color: rgba(104, 106, 110, 0.25);
   }
 
-  .For-you-text,
-  .Following-text {
+  .For-you-text {
     color: #ffffff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-weight: bold;
+  }
+
+
+  .Following-text {
+    color: #686a6e;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -409,3 +458,43 @@ body {
 
 
 
+.left-buttons {
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0;
+  transition: 0.2s;
+}
+
+.left-buttons:hover {
+  background-color: rgba(104, 106, 110, 0.25);
+  transition: 0.2s;
+}
+
+.post-special-button {
+  background-color: white;
+  border: transparent;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.post-special-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.2s;
+}
+
+.left-buttons-pfp {
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  padding: 10px 10px 7px 10px;
+  margin: 0;  
+  transition: 0.2s;
+}
+
+.left-buttons-pfp:hover {
+  background-color: rgba(104, 106, 110, 0.25);
+  transition: 0.2s;
+}
