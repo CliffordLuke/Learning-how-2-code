@@ -86,8 +86,8 @@ body {
 
     .left-icons {
       display: flex;
-      width: 25px;
-      height: 25px;
+      width: 27px;
+      height: 27px;
       object-fit: contain;
       object-position: center;
       padding: 5px;
@@ -153,6 +153,11 @@ body {
       padding: 20px;
     }
 
+    .post:hover {
+      background-color: rgba(255, 255, 255, 0.025);
+      cursor: pointer;
+    }
+
 
 
 
@@ -210,6 +215,7 @@ body {
             width: 25px;
             height: 25px;
             margin-right: 20px;
+            padding: 0;
           }
 
             .twitter-add-post-right-bottom-icon-image {
@@ -218,7 +224,8 @@ body {
               height: 25px;
               object-fit: contain;
               object-position: center;
-              padding: 0px;
+              padding: 0;
+              margin: 0;
             }
 
         .twitter-add-post-right-bottom-part2 {
@@ -256,7 +263,6 @@ body {
       display: flex;
       width: 40px;
       margin-right: 10px;
-
     }
 
     .twitter-posts-right {
@@ -295,6 +301,11 @@ body {
               color: #686a6e;
               margin-top: 5px;
             }
+
+            .twitter-timestamp:hover,
+            .twitter-username:hover {
+              text-decoration: underline;
+            }            
 
           .twitter-posts-right-top-line1-part2 {
             display: flex;
@@ -428,12 +439,12 @@ body {
     flex: 1;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
   }
 
   .For-you:hover, 
   .Following:hover {
-    background-color: rgba(104, 106, 110, 0.25);
+    background-color: rgba(255, 255, 255, 0.075);
+    cursor: pointer;
   }
 
   .For-you-text {
@@ -458,7 +469,7 @@ body {
 
 
 
-.left-buttons {
+.normal-buttons {
   background-color: transparent;
   border: transparent;
   border-radius: 50%;
@@ -467,9 +478,10 @@ body {
   transition: 0.2s;
 }
 
-.left-buttons:hover {
+.normal-buttons:hover {
   background-color: rgba(104, 106, 110, 0.25);
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .post-special-button {
@@ -478,11 +490,13 @@ body {
   border-radius: 50%;
   padding: 10px;
   transition: 0.2s;
+  margin-top: 15px;
 }
 
 .post-special-button:hover {
   background-color: rgba(255, 255, 255, 0.9);
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .left-buttons-pfp {
@@ -497,4 +511,36 @@ body {
 .left-buttons-pfp:hover {
   background-color: rgba(104, 106, 110, 0.25);
   transition: 0.2s;
+  cursor: pointer;
+}
+
+
+
+.normal-buttons2 {
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  transition: 0.2s;
+}
+
+.normal-buttons2:hover {
+  background-color: rgba(104, 106, 110, 0.25);
+  transition: 0.2s;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+/*The 4 buttons on the right side of the post*/
+.placeholder-thing-yes {
+  filter: drop-shadow(0px 100000px 0 #686a6e);
+  transform: translateY(-100000px);
 }
