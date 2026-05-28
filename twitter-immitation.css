@@ -1,9 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+/* '*' = universal selector, targets all elements*/
+
+
+
+
 body {
   margin: 0;
+  background-color: #000000;
 }
 
 .twitter-text {
-  font-family: Sans-serif;
+  font-family: Helvetica;
   font-size: 16px;
   margin: 0;
   display: block;
@@ -14,6 +24,7 @@ body {
   background-color: #000000;
   margin: 0px;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .left-section-blank {
@@ -46,8 +57,7 @@ body {
 }
 
 .left-icon-special {
-  display: flex;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .left-icons {
@@ -98,6 +108,8 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid #2f3336;
+  border-right: 1px solid #2f3336;
+  z-index: 24;
 }
 
 .For-you, 
@@ -250,6 +262,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 18px;
   align-items: flex-start;
 }
 
@@ -290,19 +303,24 @@ body {
 .twitter-posts-right-top-line1-grok,
 .twitter-posts-right-top-line1-more {
   display: flex;
-  width: 34px;
-  height: 34px;
 }
 
 .twitter-posts-right-top-line1-icon {
   display: flex;
-  width: 34px;
-  height: 34px;
   object-fit: contain;
   object-position: center;
   padding: 0px;
   align-items: center;
   justify-content: center;
+}
+
+.twitter-posts-right-top-line1-icon-image {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center;
+  padding: 0;
 }
 
 .twitter-posts-right-top-line2 {
@@ -365,8 +383,8 @@ margin-top: 12px;
 
 .twitter-posts-right-bottom-line-icon {
   display: flex;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -375,8 +393,8 @@ margin-top: 12px;
 
 .twitter-posts-right-bottom-line-icon-image {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   object-position: center;
   padding: 0;
@@ -394,10 +412,9 @@ margin-top: 12px;
 
 .twitter-posts-right-bottom-line-part2 {
   display: flex;
-  width: 76px;
-  margin-left: 24px;
-  justify-content: flex-end;
-  gap: 4px;
+  flex-direction: row;
+  flex: 0 0 auto;
+  margin-left: 8px;
 }
 
 .normal-buttons,
@@ -410,7 +427,7 @@ margin-top: 12px;
   border: 0;
   align-items: center;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   cursor: pointer;
 }
 
@@ -480,7 +497,7 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 .icon {
-  filter: drop-shadow(0px 100000px 0 #2f3336);
+  filter: drop-shadow(0px 100000px 0 #71767b);
   transform: translateY(-100000px);
 }
 
@@ -502,10 +519,55 @@ background-color: rgba(255, 255, 255, 0.9);
 
 
 
+/* I give up on the rest of the buttons, I wanna start an actual project*/
 
+.twitter-posts-right-bottom-line-comments:hover,
+.twitter-posts-right-bottom-line-comments:hover .twitter-icon-number {
+  color: #1d9bf0;
+}
 
+.twitter-posts-right-bottom-line-repost:hover,
+.twitter-posts-right-bottom-line-repost:hover .twitter-icon-number {
+  color: #00ba7c;
+}
 
+.twitter-posts-right-bottom-line-likes:hover,
+.twitter-posts-right-bottom-line-likes:hover .twitter-icon-number {
+  color: #f91880;
+}
 
-.left-accounts {
-  display: flex;
+.twitter-posts-right-bottom-line-views:hover,
+.twitter-posts-right-bottom-line-views:hover .twitter-icon-number,
+.twitter-posts-right-bottom-line-bookmark:hover,
+.twitter-posts-right-bottom-line-share:hover {
+  color: #1d9bf0;
+}
+
+.twitter-posts-right-bottom-line-comments:hover .twitter-posts-right-bottom-line-icon,
+.twitter-posts-right-bottom-line-views:hover .twitter-posts-right-bottom-line-icon,
+.twitter-posts-right-bottom-line-bookmark:hover .twitter-posts-right-bottom-line-icon,
+.twitter-posts-right-bottom-line-share:hover .twitter-posts-right-bottom-line-icon {
+  background-color: rgba(87, 87, 87, 0.25);
+}
+
+.twitter-posts-right-bottom-line-repost:hover .twitter-posts-right-bottom-line-icon {
+  background-color: rgba(87, 87, 87, 0.25);}
+
+.twitter-posts-right-bottom-line-likes:hover .twitter-posts-right-bottom-line-icon {
+  background-color: rgba(87, 87, 87, 0.25);}
+
+.twitter-posts-right-bottom-line-comments:hover .icon,
+.twitter-posts-right-bottom-line-views:hover .icon,
+.twitter-posts-right-bottom-line-bookmark:hover .icon,
+.twitter-posts-right-bottom-line-share:hover .icon,
+.blue-buttons:hover .icon {
+  filter: drop-shadow(0 100000px 0 #1d9bf0);
+}
+
+.twitter-posts-right-bottom-line-repost:hover .icon {
+  filter: drop-shadow(0 100000px 0 #00ba7c);
+}
+
+.twitter-posts-right-bottom-line-likes:hover .icon {
+  filter: drop-shadow(0 100000px 0 #f91880);
 }
